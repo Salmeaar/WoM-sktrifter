@@ -1,0 +1,27 @@
+{
+  "name": "wom-sktrifter",
+  "version": "1.0.0",
+  "description": "Antäkningar fär webbtjänster och molnteknologier kurs",
+  "homepage": "https://github.com/Salmeaar/WoM-sktrifter#readme",
+  "bugs": {
+    "url": "https://github.com/Salmeaar/WoM-sktrifter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Salmeaar/WoM-sktrifter.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
