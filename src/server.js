@@ -8,11 +8,13 @@ console.log(`Node.js ${process.version}`)
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.json({ msg: "Rahti2 node 0.3" })
+    res.json({ msg: "Notes API" })
 })
 
 const notesRouter = require('./routes/notes')
-app.use('/notes',notesRouter)
+app.use('/notes', notesRouter)
+
+
 
 app.listen(PORT, () => {
     try {

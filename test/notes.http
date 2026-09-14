@@ -1,0 +1,19 @@
+get http://localhost:8080/notes
+###
+Post http://localhost:8080/notes/2
+Content-Type: application/json
+
+{
+    "text": "Post funkar"
+}
+
+### Uppdatera note
+PUT http://localhost:8080/notes/2
+Content-Type: application/json
+
+{
+    "text": "Ny text!!"
+}
+
+### Uppdatera note
+DELETE http://localhost:8080/notes/2
