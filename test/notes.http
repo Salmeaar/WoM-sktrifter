@@ -1,13 +1,15 @@
 
-@API_URL = {{$dotenv PRODUCTION_API}}
+#@API_URL = {{$dotenv PRODUCTION_API}}
+@API_URL = {{$dotenv API_URL}}
 
 get {{API_URL}}/notes
-###
-Post {{API_URL}}/notes/2
+
+### skapa ny note
+Post {{API_URL}}/notes
 Content-Type: application/json
 
 {
-    "text": "Post funkar"
+    "note": "Post funkar"
 }
 
 ### Uppdatera note
@@ -15,7 +17,7 @@ PUT {{API_URL}}/notes/3
 Content-Type: application/json
 
 {
-    "text": "Ny text!!"
+    "note": "Ny text!!"
 }
 
 ### Uppdatera note
